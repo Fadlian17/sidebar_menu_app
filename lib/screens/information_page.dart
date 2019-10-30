@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
-class SettingsPage extends KFDrawerContent {
+class InformationPage extends KFDrawerContent {
   @override
-  _SettingsPageState createState() => _SettingsPageState();
+  _InformationPageState createState() => _InformationPageState();
 }
 
-class _SettingsPageState extends State<SettingsPage> {
+class _InformationPageState extends State<InformationPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -35,7 +35,7 @@ class _SettingsPageState extends State<SettingsPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text('Galeri'),
+                  Text('Informasi'),
                 ],
               ),
             ),

@@ -44,25 +44,33 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
       initialPage: ClassBuilder.fromString('MainPage'),
       items: [
         KFDrawerItem.initWithPage(
-          text: Text('MAIN', style: TextStyle(color: Colors.white)),
+          text: Text('Beranda', style: TextStyle(color: Colors.white)),
           icon: Icon(Icons.home, color: Colors.white),
           page: MainPage(),
         ),
         KFDrawerItem.initWithPage(
           text: Text(
-            'CALENDAR',
+            'Pencarian Sarana',
             style: TextStyle(color: Colors.white),
           ),
-          icon: Icon(Icons.calendar_today, color: Colors.white),
+          icon: Icon(Icons.search, color: Colors.white),
           page: CalendarPage(),
         ),
         KFDrawerItem.initWithPage(
           text: Text(
-            'SETTINGS',
+            'Galeri',
             style: TextStyle(color: Colors.white),
           ),
-          icon: Icon(Icons.settings, color: Colors.white),
+          icon: Icon(Icons.image, color: Colors.white),
           page: ClassBuilder.fromString('SettingsPage'),
+        ),
+        KFDrawerItem.initWithPage(
+          text: Text(
+            'Informasi',
+            style: TextStyle(color: Colors.white),
+          ),
+          icon: Icon(Icons.info, color: Colors.white),
+          page: ClassBuilder.fromString('InformationPage'),
         ),
       ],
     );

@@ -39,7 +39,7 @@ class _MainPageState extends State<MainPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text('Main Menu'),
+                  Text('Beranda'),
                 ],
               ),
             ),
